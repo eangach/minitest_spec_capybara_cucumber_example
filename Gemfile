@@ -7,3 +7,7 @@ gem 'sinatra'
 gem 'minitest'
 gem 'capybara'
 gem 'cucumber'
+
+gem 'selenium-webdriver'
+gem 'puma'
+
