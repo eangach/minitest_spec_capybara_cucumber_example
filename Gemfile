@@ -12,3 +12,4 @@ gem 'selenium-webdriver'
 gem 'puma'
 
 gem 'byebug'
+gem 'pry-byebug'

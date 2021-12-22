@@ -7,6 +7,7 @@ require 'capybara/minitest/spec'
 require 'capybara/cucumber'
 
 require 'byebug'
+require 'pry-byebug'
 
 World(Capybara::Minitest::Assertions)
 
