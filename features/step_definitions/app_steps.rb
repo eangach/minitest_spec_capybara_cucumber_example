@@ -1,5 +1,4 @@
-Given('I am a guest') do
-  # NOOP
+Given('I am a guest') do # NOOP
 end
 
 When('I view the home page') do

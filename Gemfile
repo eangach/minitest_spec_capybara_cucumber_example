@@ -11,3 +11,4 @@ gem 'cucumber'
 gem 'selenium-webdriver'
 gem 'puma'
 
+gem 'byebug'
