@@ -24,6 +24,13 @@ Capybara.register_driver :firefox do |app|
   Capybara::Selenium::Driver.new(app, browser: :firefox)
 end
 
+Capybara.register_driver :headless_firefox do |app|
+  opts = Selenium::WebDriver::Firefox::Options.new
+  opts.headless!
+
+  Capybara::Selenium::Driver.new(app, browser: :firefox, options: opts)
+end
+
 Capybara.register_driver :chrome do |app|
   Capybara::Selenium::Driver.new(app, browser: :chrome)
 end
@@ -45,5 +52,6 @@ Capybara.register_driver :headless_chrome do |app|
 end
 
 # Capybara.default_driver = :firefox
+Capybara.default_driver = :headless_firefox
 # Capybara.default_driver = :chrome
-Capybara.default_driver = :headless_chrome
+# Capybara.default_driver = :headless_chrome
