@@ -11,5 +11,7 @@ gem 'cucumber'
 gem 'selenium-webdriver'
 gem 'puma'
 
+gem 'webdrivers', '~> 5.0', require: false
+
 gem 'byebug'
 gem 'pry-byebug'

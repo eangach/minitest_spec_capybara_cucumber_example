@@ -95,6 +95,10 @@ GEM
     sys-uname (1.2.2)
       ffi (~> 1.1)
     tilt (2.0.10)
+    webdrivers (5.0.0)
+      nokogiri (~> 1.6)
+      rubyzip (>= 1.3.0)
+      selenium-webdriver (~> 4.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -110,6 +114,7 @@ DEPENDENCIES
   puma
   selenium-webdriver
   sinatra
+  webdrivers (~> 5.0)
 
 RUBY VERSION
    ruby 2.6.6p146

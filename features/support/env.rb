@@ -6,6 +6,7 @@ require 'capybara/minitest'
 require 'capybara/minitest/spec'
 require 'capybara/cucumber'
 require 'selenium/webdriver';
+require 'webdrivers'
 
 require 'byebug'
 require 'pry-byebug'
@@ -51,7 +52,7 @@ Capybara.register_driver :headless_chrome do |app|
   Capybara::Selenium::Driver.new(app, browser: :chrome, capabilities: opts)
 end
 
-# Capybara.default_driver = :firefox
-Capybara.default_driver = :headless_firefox
+Capybara.default_driver = :firefox
+# Capybara.default_driver = :headless_firefox
 # Capybara.default_driver = :chrome
 # Capybara.default_driver = :headless_chrome
