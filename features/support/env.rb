@@ -48,10 +48,10 @@ Capybara.register_driver :headless_chrome do |app|
   # Needed for docker
   # opts.add_argument '--no-sandbox'
 
-  Capybara::Selenium::Driver.new(app, browser: :chrome, options: opts)
+  Capybara::Selenium::Driver.new(app, browser: :chrome, capabilities: opts)
 end
 
 # Capybara.default_driver = :firefox
-Capybara.default_driver = :headless_firefox
+# Capybara.default_driver = :headless_firefox
 # Capybara.default_driver = :chrome
-# Capybara.default_driver = :headless_chrome
+Capybara.default_driver = :headless_chrome
